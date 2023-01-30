@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+// void func(int *pvalue);
+
+// int main(void)
+// {
+//     int value = 10;
+//     printf("&value = %p\n", &value);
+
+//     func(&value);
+//     printf("&value = %d\n", value);
+//     return 0;
+// }
+
+// void func(int* pvalue)
+// {
+//     printf("pvalue = %p\n", pvalue);
+//     *pvalue = 100;
+//     return ;
+// }
+
+int getaverage(int data[10]);
+
+int main(void)
+{
+    int average, array[10] = { 15, 78, 98, 15, 98, 85, 17, 35, 42, 15 };
+    printf("array[3] = %d\n", array[3]);
+    average = getaverage(array);
+    printf("array[3] = %d\n", array[3]);
+    printf("%d\n", average);
+    return 0;
+}
+
+int getaverage(int data[10])
+{
+    int i, average = 0;
+    for (i = 0; i < 10; i++) {
+        average += data[i];
+    }
+    data[3] = 111;
+    return average / 10;
+}
