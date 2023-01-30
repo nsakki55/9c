@@ -15,8 +15,10 @@ int main(void)
 
     printf("2: value1 %d\n", value1);    
     printf("2: value2 %d\n", value2);    
-
-
-    return 0;
     }
+
+    printf("3: value1 %d\n", value1);    
+    printf("3: value2 %d\n", value2);    
+
+
 }
